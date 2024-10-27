@@ -51,7 +51,8 @@
 			<artifactId>lombok</artifactId>
 			<scope>annotationProcessor</scope>
 		</dependency>
-	</dependencies>
+	
+ </dependencies>
 
 	<build>
 		<plugins>

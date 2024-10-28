@@ -3,15 +3,26 @@ package com.example.demo.model;
 import java.util.*;;
 
 public class Account {
+    private String accountHolderName = "";
     private Long accountId;
     private double balance;
     private List<Transaction> transactions = new ArrayList<>();
 
     public Account() { }
 
-    public Account(Long accountId, double initialBalance) {
+    public Account(Long accountId, String accountHolderName, double initialBalance) {
+        this.accountHolderName = accountHolderName;
         this.accountId = accountId;
         this.balance = initialBalance;
+    }
+
+    public String getAccountHolderName(){
+        return accountHolderName;
+    }
+
+    public void setAccountHolderName(String accountHolderName){
+        this.accountHolderName = accountHolderName;
+
     }
 
     public Long getAccountId() {

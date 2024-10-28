@@ -1,25 +1,24 @@
 package com.example.demo.dto;
 
 public class AccountDTO {
-    private Long id;
+    private long accountId;
     private String accountHolderName;
-    private double balance;
+    private double initialBalance;
 
     public AccountDTO() {
     }
 
-    public AccountDTO(Long id, String accountHolderName, double balance) {
-        this.id = id;
+    public AccountDTO(String accountHolderName, double initialBalance) {
         this.accountHolderName = accountHolderName;
-        this.balance = balance;
+        this.initialBalance = initialBalance;
     }
 
-    public Long getId() {
-        return id;
+    public long getAccountId(){
+        return accountId;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setAccountId(long accountId){
+        this.accountId = accountId;
     }
 
     public String getAccountHolderName() {
@@ -30,12 +29,12 @@ public class AccountDTO {
         this.accountHolderName = accountHolderName;
     }
 
-    public double getBalance() {
-        return balance;
+    public double getInitialBalance() {
+        return initialBalance;
     }
 
     public void setBalance(double balance) {
-        this.balance = balance;
+        this.initialBalance = balance;
     }
 }
 

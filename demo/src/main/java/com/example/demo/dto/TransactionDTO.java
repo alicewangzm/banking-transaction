@@ -1,21 +1,23 @@
-package com.example.demo.model;
+package com.example.demo.dto;
 import java.time.LocalDateTime;
 
-public class Transaction {
+public class TransactionDTO {
     private String transactionId;
     private Long fromAccountId;
     private Long toAccountId;
     private double amount;
     private LocalDateTime timestamp;
 
-    public Transaction() { }
+    // Constructors
+    public TransactionDTO() {
+    }
 
-    public Transaction(String transactionId, Long fromAccountId, Long toAccountId, double amount) {
+    public TransactionDTO(String transactionId, Long fromAccountId, Long toAccountId, double amount, LocalDateTime timestamp) {
         this.transactionId = transactionId;
         this.fromAccountId = fromAccountId;
         this.toAccountId = toAccountId;
         this.amount = amount;
-        this.timestamp = LocalDateTime.now();
+        this.timestamp = timestamp;
     }
 
     public String getTransactionId() {
@@ -57,6 +59,4 @@ public class Transaction {
     public void setTimestamp(LocalDateTime timestamp) {
         this.timestamp = timestamp;
     }
-
-
 }

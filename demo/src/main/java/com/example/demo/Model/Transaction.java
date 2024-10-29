@@ -1,4 +1,5 @@
 package com.example.demo.model;
+
 import java.time.LocalDateTime;
 
 public class Transaction {
@@ -8,7 +9,8 @@ public class Transaction {
     private double amount;
     private LocalDateTime timestamp;
 
-    public Transaction() { }
+    public Transaction() {
+    }
 
     public Transaction(String transactionId, Long fromAccountId, Long toAccountId, double amount) {
         this.transactionId = transactionId;
@@ -57,6 +59,5 @@ public class Transaction {
     public void setTimestamp(LocalDateTime timestamp) {
         this.timestamp = timestamp;
     }
-
 
 }

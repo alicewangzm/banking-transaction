@@ -1,4 +1,5 @@
 package com.example.demo.dto;
+
 import java.time.LocalDateTime;
 
 public class TransactionDTO {
@@ -12,7 +13,8 @@ public class TransactionDTO {
     public TransactionDTO() {
     }
 
-    public TransactionDTO(String transactionId, Long fromAccountId, Long toAccountId, double amount, LocalDateTime timestamp) {
+    public TransactionDTO(String transactionId, Long fromAccountId, Long toAccountId, double amount,
+            LocalDateTime timestamp) {
         this.transactionId = transactionId;
         this.fromAccountId = fromAccountId;
         this.toAccountId = toAccountId;

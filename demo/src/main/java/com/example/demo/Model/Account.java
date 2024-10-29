@@ -8,7 +8,8 @@ public class Account {
     private double balance;
     private List<Transaction> transactions = new ArrayList<>();
 
-    public Account() { }
+    public Account() {
+    }
 
     public Account(Long accountId, String accountHolderName, double initialBalance) {
         this.accountHolderName = accountHolderName;
@@ -16,11 +17,11 @@ public class Account {
         this.balance = initialBalance;
     }
 
-    public String getAccountHolderName(){
+    public String getAccountHolderName() {
         return accountHolderName;
     }
 
-    public void setAccountHolderName(String accountHolderName){
+    public void setAccountHolderName(String accountHolderName) {
         this.accountHolderName = accountHolderName;
 
     }
@@ -44,9 +45,9 @@ public class Account {
     public List<Transaction> getTransactions() {
         return transactions;
     }
-    
+
     public void addTransaction(Transaction transaction) {
         this.transactions.add(transaction);
     }
-    
+
 }

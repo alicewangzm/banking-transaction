@@ -26,10 +26,10 @@ public class AccountController {
     @Autowired
     private AccountService accountService;
 
-    @GetMapping("") 
+    @GetMapping("")
     public ResponseEntity<List<Account>> getAllAccounts() {
         List<Account> accounts = accountService.getAllAccounts();
-        return ResponseEntity.ok(accounts); 
+        return ResponseEntity.ok(accounts);
     }
 
     @PostMapping("/add")
@@ -47,4 +47,3 @@ public class AccountController {
         return ResponseEntity.ok(account.getTransactions());
     }
 }
-

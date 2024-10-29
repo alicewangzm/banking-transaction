@@ -13,11 +13,11 @@ public class AccountDTO {
         this.initialBalance = initialBalance;
     }
 
-    public long getAccountId(){
+    public long getAccountId() {
         return accountId;
     }
 
-    public void setAccountId(long accountId){
+    public void setAccountId(long accountId) {
         this.accountId = accountId;
     }
 
@@ -37,4 +37,3 @@ public class AccountDTO {
         this.initialBalance = balance;
     }
 }
-

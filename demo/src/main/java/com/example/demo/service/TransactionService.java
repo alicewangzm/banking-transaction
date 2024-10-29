@@ -43,11 +43,10 @@ public class TransactionService {
         accountRepository.save(toAccount);
 
         Transaction transaction = new Transaction(
-            UUID.randomUUID().toString(),
-            transactionDTO.getFromAccountId(),
-            transactionDTO.getToAccountId(),
-            transactionDTO.getAmount()
-        );
+                UUID.randomUUID().toString(),
+                transactionDTO.getFromAccountId(),
+                transactionDTO.getToAccountId(),
+                transactionDTO.getAmount());
         transactionRepository.save(transaction);
 
         fromAccount.addTransaction(transaction);

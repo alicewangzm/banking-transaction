@@ -25,6 +25,8 @@ The project follows a three-layered architecture:
   - `service/`: Holds the services implementing the business logic for accounts and transactions.
   - `repository/`: Manages in-memory data storage and data retrieval.
   - `model/`: Contains Java objects (`Account`, `Transaction`) representing the data.
+    - `Account.java`: Contains an accountHolderName, an accountId, a balance and a list of transactions
+    - `Transaction.java`: Contains a transactionId, a fromAccountId, a toAccountId, a amount(can't be zero) and a timestamp
   - `dto/`: Contains Data Transfer Objects (DTOs) to decouple entity data from the external API.
   
 ---
@@ -136,4 +138,4 @@ The API gracefully handles errors, providing clear messages and appropriate HTTP
 ---
 
 ## Demo Video
-Click [HERE]() to see the demo.
+Click [HERE](https://youtu.be/1m8l2FI4VLw) to see the demo.
